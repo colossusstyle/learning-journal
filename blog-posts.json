@@ -1,0 +1,73 @@
+[
+    {
+        "slug": "why-your-design-system-needs-a-changelog",
+        "date": "2026-10-05",
+        "title": "Why Your Design System Needs a Changelog",
+        "image": "/Users/will.crase/Desktop/learning-journal/images/il_fullxfull.7555363392_ma8u.webp",
+        "blurb": "Shipping tokens and components is only half the job. Telling people what changed is the other half.",
+        "content": "<p>Most design systems start with a burst of energy: a component library, a token set, a documentation site. Then the updates begin, and slowly the people relying on the system lose track of what is current. A button padding changes, a color token is renamed, and suddenly three product teams are shipping three different versions of the same screen.</p><p>A changelog fixes this with surprisingly little effort. Every release gets a short entry describing what was added, what changed, and what was deprecated. The key is to write for the people consuming the system, not the people building it. Instead of noting that a token was refactored, explain what a designer or engineer needs to do differently tomorrow morning.</p><p>Treat breaking changes with extra care. Flag them clearly, give a migration path, and set a deprecation window long enough for teams to plan the work into a sprint. A changelog that people trust becomes the single most-read page in your documentation.</p>"
+    },
+    {
+        "slug": "prototyping-in-code-without-becoming-an-engineer",
+        "date": "2026-09-21",
+        "title": "Prototyping in Code Without Becoming an Engineer",
+        "image": "/Users/will.crase/Desktop/learning-journal/images/il_fullxfull.7555363392_ma8u.webp",
+        "blurb": "Code-based prototypes answer questions static mockups can't. Here is how to start without the overwhelm.",
+        "content": "<p>Static mockups are great at showing what a screen looks like. They are much worse at showing how it feels. Scroll physics, gesture timing, keyboard behavior, and real data all change the experience in ways a flat frame cannot capture.</p><p>The good news is that you do not need to become a full-time engineer to prototype in code. Pick one interaction you are unsure about and build only that. Use real devices as early as possible, because a prototype on a laptop simulator will lie to you about touch targets and performance.</p><p>Keep your prototypes disposable. The goal is to learn, not to ship. When you find the answer you were looking for, write it down, share a short screen recording with your team, and move on. Over time you will build a library of small experiments that make every future design decision faster.</p>"
+    },
+    {
+        "slug": "accessibility-is-a-design-constraint-not-a-checklist",
+        "date": "2026-09-08",
+        "title": "Accessibility Is a Design Constraint, Not a Checklist",
+        "image": "/Users/will.crase/Desktop/learning-journal/images/il_fullxfull.7555363392_ma8u.webp",
+        "blurb": "Teams that design for accessibility from the start build better products for everyone.",
+        "content": "<p>Too often, accessibility arrives at the end of a project as an audit full of red flags. Contrast ratios fail, focus order is broken, and screen readers announce a wall of unlabeled buttons. Fixing all of it late is expensive and frustrating.</p><p>Shifting accessibility to the beginning changes the conversation. When contrast requirements are baked into your color tokens, when minimum touch targets are part of your component specs, and when every icon button ships with a label by default, most issues never appear in the first place.</p><p>Think of these requirements the same way you think about screen sizes or brand guidelines. They are boundaries that shape good solutions. Many of the clearest, most usable interfaces exist precisely because a designer had to make them work for someone using a screen reader, a switch control, or a very small display.</p>"
+    },
+    {
+        "slug": "the-hidden-cost-of-onboarding-tours",
+        "date": "2026-08-24",
+        "title": "The Hidden Cost of Onboarding Tours",
+        "blurb": "Product tours are easy to add and hard to get right. A few principles for making them actually help.",
+        "content": "<p>Onboarding tours feel like a quick win. Add a few tooltips, highlight the main navigation, and new users will understand everything. In practice, most people skip them within seconds, and the ones who sit through them rarely remember what they saw.</p><p>The problem is timing. A tour that appears on first launch asks people to learn before they have a reason to care. Contextual guidance works far better: show a hint at the moment someone reaches a feature, and keep it to a single sentence with a clear action.</p><p>Measure what matters. Completion rate for a tour says very little. Instead, look at whether people who saw the guidance actually used the feature afterward. If they did not, the tour is decoration, and it may be time to fix the interface itself rather than explain it.</p>"
+    },
+    {
+        "slug": "designing-for-multiple-brands-from-one-system",
+        "date": "2026-08-10",
+        "title": "Designing for Multiple Brands From One System",
+        "image": "/Users/will.crase/Desktop/learning-journal/images/il_fullxfull.7555363392_ma8u.webp",
+        "blurb": "One component library, many visual identities. How token layering makes multi-brand design manageable.",
+        "content": "<p>Supporting several brands with a single design system sounds like a recipe for compromise. In reality, it can be one of the most efficient setups a product organization can have, as long as the token architecture is right.</p><p>The trick is separating decisions into layers. Reference tokens hold raw values like specific hex codes. System tokens describe roles, such as primary surface or error text. Component tokens map those roles onto individual parts of the interface. Each brand only needs to redefine the reference layer, and every component updates automatically.</p><p>This structure also makes theming for dark mode and high contrast far simpler. Instead of maintaining separate component variants, you swap the values underneath. The components never need to know which brand or theme they are rendering in.</p>"
+    },
+    {
+        "slug": "what-good-error-messages-have-in-common",
+        "date": "2026-07-27",
+        "title": "What Good Error Messages Have in Common",
+        "image": "/Users/will.crase/Desktop/learning-journal/images/il_fullxfull.7555363392_ma8u.webp",
+        "blurb": "Errors are part of the experience. Writing them well can turn frustration into trust.",
+        "content": "<p>Every product fails sometimes. A network drops, a form field is invalid, a payment is declined. How the interface responds in those moments often matters more than how it behaves when everything works.</p><p>Good error messages share three traits. They explain what happened in plain language, they tell people what to do next, and they never blame the user. Compare a message that reads Invalid input with one that says Please enter a date in the format MM/DD/YYYY. The second one solves the problem.</p><p>Placement matters too. Show errors next to the thing that caused them, keep the information someone already entered, and make sure the message is announced to assistive technology. A well-handled error can leave someone feeling more confident in your product, not less.</p>"
+    },
+    {
+        "slug": "running-design-critiques-that-people-look-forward-to",
+        "date": "2026-07-13",
+        "title": "Running Design Critiques That People Look Forward To",
+        "image": "/Users/will.crase/Desktop/learning-journal/images/il_fullxfull.7555363392_ma8u.webp",
+        "blurb": "Critique sessions can drain a team or energize it. A simple structure makes the difference.",
+        "content": "<p>Design critiques have a reputation problem. Many teams treat them as presentations followed by a round of opinions, and designers leave with a long list of conflicting feedback and no clear direction.</p><p>A better critique starts with framing. The presenter explains the problem, the constraints, and the specific questions they want help with. Reviewers then respond to those questions first, before offering anything else. This keeps the session focused and respects the work that has already been done.</p><p>End every critique by summarizing the key takeaways and agreeing on next steps. Feedback that is not captured is quickly forgotten. Over time, a consistent structure builds trust, and people start bringing work earlier, when feedback is cheapest to act on.</p>"
+    },
+    {
+        "slug": "reducing-drop-off-in-sign-up-flows",
+        "date": "2026-06-29",
+        "title": "Reducing Drop-Off in Sign-Up Flows",
+        "image": "/Users/will.crase/Desktop/learning-journal/images/il_fullxfull.7555363392_ma8u.webp",
+        "blurb": "Every extra step in registration costs you users. Small changes can recover a surprising number of them.",
+        "content": "<p>Sign-up flows are where good intentions go to die. Someone downloads your app excited to try it, and then meets a long form, an identity check, and a verification email before they see any value at all.</p><p>Start by questioning every field. If information is not required to create the account, ask for it later. Use the right keyboard types on mobile, support autofill, and validate inline so people are not surprised by errors at the very end.</p><p>When verification steps are unavoidable, explain why they exist and how long they will take. Uncertainty drives abandonment more than effort does. A progress indicator and a clear reason for each step can make a longer process feel shorter than a short one that seems to go on forever.</p>"
+    },
+    {
+        "slug": "small-components-big-decisions",
+        "date": "2026-06-15",
+        "title": "Small Components, Big Decisions",
+        "image": "/Users/will.crase/Desktop/learning-journal/images/il_fullxfull.7555363392_ma8u.webp",
+        "blurb": "Tabs, chips, and selectors look simple. Designing them well takes more thought than you might expect.",
+        "content": "<p>Some of the hardest design problems hide inside the smallest components. A horizontal row of selectable chips seems trivial until you consider how it scrolls, how the selected state is communicated, what happens with twenty items instead of five, and how it reads to a screen reader.</p><p>Start by defining behavior before visuals. Should the selected item scroll into view automatically? Should items show additional status, like whether something is live or finished? How large must each target be to tap reliably while on the move?</p><p>Once the behavior is settled, the visual design tends to follow naturally. Document these decisions alongside the component so the next person who uses it understands not just how it looks, but why it works the way it does.</p>"
+    }
+]
