@@ -40,8 +40,7 @@ fetch('blog-posts.json')
         // recent post feed on post.html
         if (recentPosts) {
             recentPosts.innerHTML = posts.slice(0, 3).map((post, index) => `
-            <div class="recent-feed-post">
-                <li>
+                <li class="recent-feed-post">
                     <article class="recent-feed-post-card">
                         <img src="${post.image}" alt="" />
                         <time datetime="${post.date}">${post.date}</time>
@@ -49,7 +48,6 @@ fetch('blog-posts.json')
                         <p>${post.blurb}</p>
                     </article>
                 </li>
-            </div>
             `).join('');
         }
 

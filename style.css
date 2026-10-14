@@ -62,6 +62,23 @@ nav {
    width: 100%;
 }
 
+nav a { /* Unvisited link  */
+    font-weight: 900;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+}
+ 
+nav a:visited {  /* Visited link    */
+    color: black;
+}
+nav a:hover {    /* Mouse over link */
+    color: purple;
+}
+
+nav a:active {   /* Selected link   */
+    color: black;
+}
+
 ul { 
     list-style: none;
 }
@@ -110,6 +127,7 @@ nav li {
     padding: 1rem;
     background-color: #FFFFFF;
     border-radius: 6px;
+    outline: solid 1px lightgray;
     position: relative;
     box-sizing: border-box;
 }
@@ -157,9 +175,25 @@ nav li {
     padding: 1em;
 }
 
-.recent-feed-post-card{
+.recent-feed-post {
+    display: flex;
+    min-width: 0;
+}
+
+.recent-feed-post-card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     width: 100%;
     position: relative;
+    min-width: 0;
+    padding: 1rem;
+    border-radius: 6px;
+    outline: solid 1px lightgray;
+}
+
+.recent-feed-post-card a {
+    overflow-wrap: break-word;
 }
 
 .recent-feed-post-card img{
