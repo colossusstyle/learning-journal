@@ -6,6 +6,7 @@ fetch('blog-posts.json')
         const heroImg = document.getElementById('hero-img');
         const recentPosts = document.getElementById('recent-posts');
 
+        
         // index.html: show a card for every post
         if (heroImg && posts.length > 0) {
             const post = posts[0];
