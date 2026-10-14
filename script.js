@@ -3,7 +3,8 @@ fetch('blog-posts.json')
     .then(posts => {
         const grid = document.getElementById('posts-grid');
         const postContainer = document.getElementById('post');
-        const heroImg = document.getElementById('hero-img')
+        const heroImg = document.getElementById('hero-img');
+        const recentPosts = document.getElementById('recent-posts');
 
         // index.html: show a card for every post
         if (heroImg && posts.length > 0) {
@@ -20,6 +21,7 @@ fetch('blog-posts.json')
             `;
         }
 
+        //main page article grid
         if (grid) {
             grid.innerHTML = posts.slice(1).map((post, index) => {
                 const postId = index + 1;
@@ -33,6 +35,22 @@ fetch('blog-posts.json')
                     </article>
                 `;
             }).join('');
+        }
+
+        // recent post feed on post.html
+        if (recentPosts) {
+            recentPosts.innerHTML = posts.slice(0, 3).map((post, index) => `
+            <div class="recent-feed-post">
+                <li>
+                    <article class="recent-feed-post-card">
+                        <img src="${post.image}" alt="" />
+                        <time datetime="${post.date}">${post.date}</time>
+                        <h1><a href="post.html?id=${index}" class="card-link">${post.title}</a></h1>
+                        <p>${post.blurb}</p>
+                    </article>
+                </li>
+            </div>
+            `).join('');
         }
 
         // post.html: show the post whose number is in the URL

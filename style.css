@@ -125,6 +125,34 @@ ul {
     padding: 1em;
 }
 
+/* recent post feed */
+
+.recent-posts-feed {
+    width: 100%;
+    padding: 1em;
+}
+
+#recent-posts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 1em;
+}
+
+.recent-feed-post-card{
+    width: 100%;
+}
+
+.recent-feed-post-card img{
+    width: 100%;
+}
+
+.recent-feed-post-card:hover,
+.post-card:focus-within {
+    border-color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* footer */
 
