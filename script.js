@@ -9,11 +9,14 @@ fetch('blog-posts.json')
         if (heroImg && posts.length > 0) {
             const post = posts[0];
 
-            heroImg.style.backgroundImage = `url("${post.image}")`;
             heroImg.innerHTML = `
-                <time datetime="${post.date}">${post.date}</time>
-                <h2><a href="post.html?id=0" class="card-link">${post.title}</a></h2>
-                <p>${post.blurb}</p>
+                <div class="hero-img" style="background-color: #000000; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${post.image}');">
+                    <div class="hero-img-inner">
+                    <time datetime="${post.date}">${post.date}</time>
+                    <h1><a href="post.html?id=${post.id || 0}" class="card-link">${post.title}</a></h1>
+                    <p>${post.blurb}</p>
+                    </div>
+                </div>
             `;
         }
 
@@ -25,7 +28,7 @@ fetch('blog-posts.json')
                     <article class="post-card">
                         <img src="${post.image}" alt="" />
                         <time datetime="${post.date}">${post.date}</time>
-                        <h2><a href="post.html?id=${postId}" class="card-link">${post.title}</a></h2>
+                        <h1><a href="post.html?id=${postId}" class="card-link">${post.title}</a></h1>
                         <p>${post.blurb}</p>
                     </article>
                 `;
